@@ -35,8 +35,12 @@ dsh plugin --profile web add link:/path/to/dsh-star-favorites
 - 纯 **Client 插件**（`dsh.client.platform = "web"`，`immediately: true`），宿主半为空实现；
 - 通过 `data-chat-flow-kind="user"` / `data-chat-turn` 定位用户消息；
 - 通过 `button[aria-label*="第 N 轮"]` 找到 rail 横线，读取其 `getBoundingClientRect()` 对齐星标；
-- 星标使用 `position: fixed` 覆盖层渲染，避免被 rail 容器的 `overflow` 裁剪；
+- 星标渲染在 rail 外层 `.SNx2jG_frame`（`overflow: visible`）上，避免被 `.SNx2jG_scroller` 裁剪；
 - 滚动时同步刷新坐标，保证跟手。
+
+## 更新日志
+
+见 [CHANGELOG.md](./CHANGELOG.md)。
 
 ## 兼容性
 
