@@ -1,0 +1,4 @@
+# dsh-star-favorites bundle patch
+- insert:
+    - id: dsh-star-favorites
+      name: dsh-star-favorites
