@@ -1,6 +1,6 @@
 {
   "name": "dsh-star-favorites",
-  "version": "0.10.0",
+  "version": "0.17.0",
   "type": "module",
   "description": "Star your own messages in the DSH Web UI and pin a matching star beside the conversation turn rail.",
   "keywords": [
@@ -24,6 +24,7 @@
     "lib",
     "cordis.patch.yml",
     "README.md",
+    "CHANGELOG.md",
     "LICENSE"
   ],
   "repository": {
