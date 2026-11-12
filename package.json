@@ -1,0 +1,46 @@
+{
+  "name": "dsh-star-favorites",
+  "version": "0.10.0",
+  "type": "module",
+  "description": "Star your own messages in the DSH Web UI and pin a matching star beside the conversation turn rail.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "bookmark",
+    "star",
+    "turn-rail"
+  ],
+  "license": "MIT",
+  "private": true,
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wfl-handsome/dsh-star-favorites.git"
+  },
+  "homepage": "https://github.com/wfl-handsome/dsh-star-favorites#readme",
+  "bugs": {
+    "url": "https://github.com/wfl-handsome/dsh-star-favorites/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}
