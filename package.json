@@ -1,6 +1,6 @@
 {
   "name": "dsh-star-favorites",
-  "version": "0.17.0",
+  "version": "0.18.0",
   "type": "module",
   "description": "Star your own messages in the DSH Web UI and pin a matching star beside the conversation turn rail.",
   "keywords": [
