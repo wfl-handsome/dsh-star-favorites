@@ -1,5 +1,17 @@
 # 更新日志
 
+## v0.18.0
+
+**性能修复：跳转后卡顿**
+
+- 滚动更新改为 `requestAnimationFrame` 合并，每帧最多一次；
+- rail 星标只对已收藏轮次读取 `getBoundingClientRect()`，不再遍历全部横线；
+- `MutationObserver` 范围从 `documentElement` 缩到对话容器，并做 180ms 防抖；
+- 忽略插件自身插入星标产生的 mutation，消除“自己触发自己”的循环；
+- 消息星标仅在收藏状态变化时重建 SVG；
+- 跳转后暂停 rail 更新 1.2s，避免与平滑滚动抢布局；
+- 缓存对话根节点与 rail 容器，失效时自动重取。
+
 ## v0.17.0
 
 **星标布局修复（本轮重点）**
